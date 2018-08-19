@@ -1,15 +1,12 @@
-let amountInput = parseFloat(prompt('Amount of money:', ''));
-let amount = amountInput.toFixed(2);
+let amount = parseFloat(prompt('Amount of money:', ''));
+let discount = parseFloat(prompt('Discount:', ''));
 
-let discountInput = parseFloat(prompt('Discount:', ''));
-let discount = discountInput.toFixed(2);
-
-let priceWithDiscount = (amount-amount * discount/100).toFixed(2);
+let priceWithDiscount = amount-amount * discount/100;
 let saved = amount - priceWithDiscount;
 
-if (amountInput < 0) {
+if (amount < 0 || discount < 0) {
     console.log('Invalid data');
 } else {
-    console.log(`Price without discount: ${amount}\nDiscount: ${discount}%
-Price with discount: ${priceWithDiscount}\nSaved: ${saved}`);
+    console.log(`Price without discount: ${amount.toFixed(2)}\nDiscount: ${discount.toFixed(2)}%
+Price with discount: ${priceWithDiscount.toFixed(2)}\nSaved: ${saved}`);
 }
