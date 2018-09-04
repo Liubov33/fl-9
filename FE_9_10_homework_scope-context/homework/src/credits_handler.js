@@ -69,7 +69,7 @@ class UserAccount {
     }
 
     addCard() {
-        if (this.card.length < this.maxCardNumber) {
+        if (this.cards.length < this.maxCardNumber) {
             this.cards.push(userCard(this.cards.length + 1));
         } else {
             console.log('Maximum number of cards exceeded')

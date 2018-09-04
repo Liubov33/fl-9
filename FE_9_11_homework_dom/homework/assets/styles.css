@@ -1,0 +1,77 @@
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.container {
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px auto 20px;
+}
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+input {
+    width: 410px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+input[type="text"]::placeholder {
+    padding-left: 5px;
+    color: #7c7a7a;
+}
+button {
+    padding: 0;
+    margin-right: -13px;
+    border: 0;
+    background: none;
+}
+#notification {
+    text-align: center;
+    color: red;
+    display: none;
+}
+main {
+    width: 450px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+.material-icons {
+    padding-right: 4px;
+}
+ul {
+    padding: 0;
+}
+span {
+    display: flex;
+    align-items: center;
+}
+span i {
+    cursor: auto;
+}
+.dragEl {
+    opacity: 0.5;
+}
+.pets {
+    display: flex;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 55px;
+}
